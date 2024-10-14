@@ -137,3 +137,35 @@ blockquote {
     background-color: #005f99;
     color: white;
 }
+.image-gallery {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+.image-gallery img {
+    max-width: 30%; 
+    height: 300px; 
+    object-fit: cover; 
+    margin: 2px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#toggleActivities {
+    background-color: #005b96; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    font-size: 16px;
+    font-family: 'Playfair Display', serif; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+#toggleActivities:hover {
+    background-color: #00457c; 
+    transform: scale(1.05); 
+}

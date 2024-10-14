@@ -10,7 +10,7 @@
 
 <header>
     <h1>Nantucket in the Summer</h1>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="summer.html">Summer</a></li>
@@ -24,10 +24,16 @@
     <p>Nantucket, a picturesque island off the coast of Massachusetts, transforms into a summer paradise from June to September. Visitors enjoy the warm weather, stunning beaches, and vibrant local culture. The island's historic charm combined with its natural beauty creates a unique atmosphere perfect for relaxation and adventure.</p>
     <p>Summer is the ideal time to explore the island’s scenic landscapes. From sandy beaches to quaint cobblestone streets, there’s something for everyone. Whether you prefer sunbathing, sailing, or indulging in fresh seafood, Nantucket has it all.</p>
 </section>
-
+<div class="image-gallery">
+    <img src="images/flowerspic.png" alt="Flowers" />
+    <img src="images/bluffwalk.JPG" alt="bluffwalk" />
+    <img src="images/beachpic.png" alt="Beach!" />
+</div>
 <section>
     <h2>Activities and Attractions</h2>
-    <p>During the summer months, Nantucket offers a variety of activities. Here’s a list of popular attractions:</p>
+    <p>During the summer months, Nantucket offers a variety of activities. Click below to see some popular options!</p>
+    <button id="toggleActivities">Show/Hide Activities</button>
+    <div id="activities" style="display: none;">
     <ul>
         <li>Beach Day at Surfside Beach</li>
         <li>Whale Watching Tours</li>
@@ -73,6 +79,16 @@
     <p><strong>Explore Nantucket this summer and create unforgettable memories!</strong></p>
     <p><em>For more information, visit the Nantucket Chamber of Commerce website.</em></p>
 </footer>
+<script>
+    document.getElementById('toggleActivities').addEventListener('click', function() {
+        var activities = document.getElementById('activities');
+        if (activities.style.display === 'none') {
+            activities.style.display = 'block';
+        } else {
+            activities.style.display = 'none';
+        }
+    });
+</script>
 
 </body>
 </html>
