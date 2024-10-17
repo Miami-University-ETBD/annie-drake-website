@@ -10,7 +10,7 @@
 
 <header>
     <h1>Nantucket in the Winter</h1>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="summer.html">Summer</a></li>
@@ -24,10 +24,14 @@
     <p>During the winter months, Nantucket transforms into a serene and beautiful destination, which is a contrast to its bustling summer vibe. The island’s charm shines through the scenic landscapes, quiet beaches, and quaint streets lined with historic homes. Winter is a time when visitors can enjoy the island's peaceful ambiance and connect with nature in a more intimate way.</p>
     <p>Although temperatures can drop, the island remains a hidden gem for those looking to escape the crowded tourist season. Cozy inns and local shops invite visitors to explore, while winter activities such as beachcombing and hiking provide opportunities to enjoy the outdoors without the summer crowds.</p>
 </section>
-
+<div class="image-gallery">
+    <img src="images/winterbeach.jpg" alt="the beach in the winter" />
+</div>
 <section>
     <h2>Winter Activities</h2>
-    <p>Nantucket offers a variety of activities during the winter season. Here are some popular options:</p>
+    <p>Nantucket offers a variety of activities during the winter season. Click the button below to see some popular options!</p>
+    <button id="toggleActivities">Show/Hide Activities</button>
+    <div id="activities" style="display: none;">
     <ul>
         <li>Strolling through the picturesque town</li>
         <li>Exploring the island's nature trails</li>
@@ -73,6 +77,15 @@
     <p><strong>Experience the unique beauty of Nantucket in the winter!</strong></p>
     <p><em>For more information on winter activities, check out Nantucket's official tourism website.</em></p>
 </footer>
-
+<script>
+    document.getElementById('toggleActivities').addEventListener('click', function() {
+        var activities = document.getElementById('activities');
+        if (activities.style.display === 'none') {
+            activities.style.display = 'block';
+        } else {
+            activities.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
