@@ -34,7 +34,11 @@
             padding-bottom: 5px;
             font-family: 'Playfair Display', serif;
         }
-
+        .card .card-image img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
         .collapsible-header {
             background-color: #005b96;
             color: white;
@@ -234,7 +238,7 @@
 
     <!-- Email Feedback Section -->
    <div id="feedback-section" class="section container">
-    <h4>Subscribe for Updates</h4>
+    <h4>Subscribe to Join Our Email List!</h4>
     <form onsubmit="submitEmail(event)">
         <div class="input-field">
             <input id="email" type="email" required>
