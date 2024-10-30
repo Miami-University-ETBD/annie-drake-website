@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nantucket's History</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .container {
+           margin-top: 20px;
+       }
+
+        h4 {
+            color: #003366; /* Header color */
+            border-bottom: 2px solid #005b96;
+            padding-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+        }
+        .card .card-image img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nantucket's History</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="summer.html">Summer</a></li>
+                <li><a href="winter.html">Winter</a></li>
+                <li><a href="materialize.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <!-- Text and Background -->
+        <div class="container">
+            <h4 class="center-align">Overview</h4>
+            <p class="flow-text">Nantucket is rich in history, known for its whaling industry and vibrant culture.</p>
+        </div>
+     
+        <!-- Historical Events Buttons -->
+        <div class="container">
+            <h4>Explore Key Events</h4>
+            <a href="https://www.thenantuckethotel.com/signature-experiences/nantucket-guide/the-history-of-nantucket/" class="waves-effect waves-light btn-large #005b96 blue darken-4">Discovery by Europeans</a>
+            <a href="https://www.smithsonianmag.com/history/nantucket-came-to-be-whaling-capital-of-world-180957198/" class="waves-effect waves-light btn-large #005b96 blue darken-4">Whaling Era</a>
+        </div>
+     
+        <!-- Historical Figures Cards -->
+        <div class="container">
+            <h4>Notable Figures</h4>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/melville.jpg" alt="Herman Melville">
+                    <span class="card-title">Herman Melville</span>
+                </div>
+                <div class="card-content">
+                    <p>Author of "Moby-Dick," Melville was inspired by Nantucket's whaling history.</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://www.britannica.com/biography/Herman-Melville">Learn More</a>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0n2cRgXW-QQ?si=AAN_RMzekc6c3qYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+            </div>
+        </div>
+     
+        <!-- Key Historical Events Table -->
+        <div class="container">
+            <h4>Key Historical Events</h4>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Event</th>
+                        <th>Significance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1602</td>
+                        <td>Discovery by Europeans</td>
+                        <td>First recorded sighting by European explorers.</td>
+                    </tr>
+                    <tr>
+                        <td>1710</td>
+                        <td>First Permanent Settlement</td>
+                        <td>Establishment of Nantucket as a whaling community.</td>
+                    </tr>
+                    <tr>
+                        <td>1846</td>
+                        <td>Great Fire</td>
+                        <td>Devastating fire that reshaped the town's architecture.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+     
+        <!-- Shading for Museum Info -->
+        <div class="container">
+            <h4>Nantucket Whaling Museum</h4>
+            <div class="#005b96 blue darken-4">
+                <span class="white-text">Explore the rich maritime heritage of Nantucket at the Whaling Museum.</span>
+            </div>
+        </div>
+     
+        <!-- Historical Images -->
+        <div class="container">
+            <h4>Historical Images</h4>
+            <div class="row">
+                <div class="col s12 m6">
+                    <img src="images/historicMap.jpg" alt="Historical Map of Nantucket" class="circle responsive-img">
+                </div>
+                <div class="col s12 m6">
+                    <img src="images/oldNantucket.jpg" alt="Old Nantucket" class="circle responsive-img">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Nantucket Tourism. All rights reserved.</p>
+        </footer>
+
+        <!-- Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.materialboxed');
+                var instances = M.Materialbox.init(elems);
+            });
+        </script>
+     </body>
+     </html>
+     
