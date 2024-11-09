@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nantucket's History</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
         body {
             background-color: #f0f4f8;
@@ -13,13 +14,23 @@
             line-height: 1.6;
             margin: 0;
         }
+
         .container {
-           margin-top: 20px;
-       }
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
 
         h4 {
             color: #003366; /* Header color */
             border-bottom: 2px solid #005b96;
+            padding-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+        }
+        h5 {
+            color: white; /* Header color */
             padding-bottom: 5px;
             font-family: 'Playfair Display', serif;
         }
@@ -28,9 +39,26 @@
             object-fit: cover;
             border-radius: 8px;
         }
-        
+        .collapsible-header {
+            background-color: #005b96;
+            color: white;
+        }
+
+        .collapsible-body {
+            background-color: #e1f5fe;
+        }
+
+        .carousel .carousel-item {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+        }
+
+        .carousel img {
+            object-fit: cover; /* Make images cover the entire area */
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Nantucket's History</h1>
@@ -44,103 +72,230 @@
         </nav>
     </header>
 
+    <!-- Text and Background -->
+    <div class="container">
+        <h4 class="center-align">Overview</h4>
+        <p class="flow-text">Nantucket is rich in history, known for its whaling industry and vibrant culture.</p>
+    </div>
 
-        <!-- Text and Background -->
-        <div class="container">
-            <h4 class="center-align">Overview</h4>
-            <p class="flow-text">Nantucket is rich in history, known for its whaling industry and vibrant culture.</p>
-        </div>
-     
-        <!-- Historical Events Buttons -->
-        <div class="container">
-            <h4>Explore Key Events</h4>
-            <a href="https://www.thenantuckethotel.com/signature-experiences/nantucket-guide/the-history-of-nantucket/" class="waves-effect waves-light btn-large #005b96 blue darken-4">Discovery by Europeans</a>
-            <a href="https://www.smithsonianmag.com/history/nantucket-came-to-be-whaling-capital-of-world-180957198/" class="waves-effect waves-light btn-large #005b96 blue darken-4">Whaling Era</a>
-        </div>
-     
-        <!-- Historical Figures Cards -->
-        <div class="container">
-            <h4>Notable Figures</h4>
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/melville.jpg" alt="Herman Melville">
-                    <span class="card-title">Herman Melville</span>
-                </div>
-                <div class="card-content">
-                    <p>Author of "Moby-Dick," Melville was inspired by Nantucket's whaling history.</p>
-                </div>
-                <div class="card-action">
-                    <a href="https://www.britannica.com/biography/Herman-Melville">Learn More</a>
-                </div>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0n2cRgXW-QQ?si=AAN_RMzekc6c3qYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div> 
-            </div>
-        </div>
-     
-        <!-- Key Historical Events Table -->
-        <div class="container">
-            <h4>Key Historical Events</h4>
-            <table class="striped">
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Event</th>
-                        <th>Significance</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1602</td>
-                        <td>Discovery by Europeans</td>
-                        <td>First recorded sighting by European explorers.</td>
-                    </tr>
-                    <tr>
-                        <td>1710</td>
-                        <td>First Permanent Settlement</td>
-                        <td>Establishment of Nantucket as a whaling community.</td>
-                    </tr>
-                    <tr>
-                        <td>1846</td>
-                        <td>Great Fire</td>
-                        <td>Devastating fire that reshaped the town's architecture.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-     
-        <!-- Shading for Museum Info -->
-        <div class="container">
-            <h4>Nantucket Whaling Museum</h4>
-            <div class="#005b96 blue darken-4">
-                <span class="white-text">Explore the rich maritime heritage of Nantucket at the Whaling Museum.</span>
-            </div>
-        </div>
-     
-        <!-- Historical Images -->
-        <div class="container">
-            <h4>Historical Images</h4>
-            <div class="row">
-                <div class="col s12 m6">
-                    <img src="images/historicMap.jpg" alt="Historical Map of Nantucket" class="circle responsive-img">
-                </div>
-                <div class="col s12 m6">
-                    <img src="images/oldNantucket.jpg" alt="Old Nantucket" class="circle responsive-img">
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p>&copy; 2024 Nantucket Tourism. All rights reserved.</p>
-        </footer>
+    <!-- Historical Events Buttons -->
+    <div class="container">
+        <h4>Explore Key Events</h4>
+        <a href="https://www.thenantuckethotel.com/signature-experiences/nantucket-guide/the-history-of-nantucket/" class="waves-effect waves-light btn-large #005b96 blue darken-4">Discovery by Europeans</a>
+        <a href="https://www.smithsonianmag.com/history/nantucket-came-to-be-whaling-capital-of-world-180957198/" class="waves-effect waves-light btn-large #005b96 blue darken-4">Whaling Era</a>
+    </div>
 
-        <!-- Materialize JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.materialboxed');
-                var instances = M.Materialbox.init(elems);
-            });
-        </script>
-     </body>
-     </html>
-     
+    <!-- Historical Figures Cards -->
+    <div class="container">
+        <h4>Notable Figures</h4>
+        <div class="card">
+            <div class="card-image">
+                <img src="images/melville.jpg" alt="Herman Melville">
+                <span class="card-title">Herman Melville</span>
+            </div>
+            <div class="card-content">
+                <p>Author of "Moby-Dick," Melville was inspired by Nantucket's whaling history.</p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.britannica.com/biography/Herman-Melville">Learn More</a>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0n2cRgXW-QQ?si=AAN_RMzekc6c3qYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Historical Events Table -->
+    <div class="container">
+        <h4>Key Historical Events</h4>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Event</th>
+                    <th>Significance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1602</td>
+                    <td>Discovery by Europeans</td>
+                    <td>First recorded sighting by European explorers.</td>
+                </tr>
+                <tr>
+                    <td>1710</td>
+                    <td>First Permanent Settlement</td>
+                    <td>Establishment of Nantucket as a whaling community.</td>
+                </tr>
+                <tr>
+                    <td>1846</td>
+                    <td>Great Fire</td>
+                    <td>Devastating fire that reshaped the town's architecture.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Shading for Museum Info -->
+    <div class="container">
+        <h4>Nantucket Whaling Museum</h4>
+        <div class="#005b96 blue darken-4">
+            <span class="white-text">Explore the rich maritime heritage of Nantucket at the Whaling Museum.</span>
+        </div>
+    </div>
+
+    <!-- Historical Images -->
+    <div class="container">
+        <h4>Historical Images</h4>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="images/historicMap.jpg" alt="Historical Map of Nantucket" class="circle responsive-img">
+            </div>
+            <div class="col s12 m6">
+                <img src="images/oldNantucket.jpg" alt="Old Nantucket" class="circle responsive-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousal -->
+    
+    <div class="container">
+        <h4>Nantucket's Historic Landmarks</h4>
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect #005b96 blue darken-4 white-text">Explore More</a>
+            </div>
+            <div class="carousel-item white-text" href="#one!" style="background-color: #005b96;">
+                <h5>Brant Point Lighthouse</h5>
+                <p>One of the oldest lighthouses in the United States, guiding ships since 1746.</p>
+                <img src="images/brantPointLighthouse.jpg" alt="Brant Point Lighthouse">
+            </div>
+            <div class="carousel-item white-text" href="#two!" style="background-color: #005b96;">
+                <h5>Nantucket Whaling Museum</h5>
+                <p>Dive into Nantucket's rich whaling history at this engaging museum.</p>
+                <img src="images/whalingMuseum.jpg" alt="Nantucket Whaling Museum">
+            </div>
+            <div class="carousel-item white-text" href="#three!" style="background-color: #005b96;">
+                <h5>First Congregational Church</h5>
+                <p>A historic church known for its beautiful architecture and vibrant community.</p>
+                <img src="images/congregationalChurch.jpg" alt="First Congregational Church">
+            </div>
+            <div class="carousel-item white-text" href="#four!" style="background-color: #005b96;">
+                <h5>The Old Mill</h5>
+                <p>The oldest working mill in the United States, dating back to 1746.</p>
+                <img src="images/oldMill.jpg" alt="The Old Mill">
+            </div>
+        </div>
+    </div>
+
+    <!-- Collapsible Section for Preservation Efforts -->
+    
+    <div class="container">
+        <h4>Nantucket's Historic Preservation Efforts</h4>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons"></i> Historic District Commission</div>
+                <div class="collapsible-body">
+                    <span>The Historic District Commission oversees the preservation and development of Nantucket's historic districts, ensuring that new construction is in collaboration with the island's rich architectural heritage.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons"></i> Nantucket Preservation Trust</div>
+                <div class="collapsible-body">
+                    <span>The Nantucket Preservation Trust is dedicated to preserving the island’s architectural heritage through advocacy, education, and fundraising efforts, aiming to maintain the unique character of Nantucket.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons"></i> Community Preservation Act</div>
+                <div class="collapsible-body">
+                    <span>This act provides funding for the preservation of historic sites, ensuring that vital structures are maintained for future generations to enjoy and learn from.</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="radio-section" class="section container">
+        <h4>Select the Historic Preservation Method You Want to Support</h4>
+        <form>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="The Historic District Commission" onclick="displayPastry()"/>
+                    <span>The Historic District Commission</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="The Nantucket Preservation Trust" onclick="displayPastry()"/>
+                    <span>The Nantucket Preservation Trust</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="The Community Preservation Act" onclick="displayPastry()"/>
+                    <span>The Community Preservation Act</span>
+                </label>
+            </p>
+        </form>
+        <div id="pastry-response"></div>
+    </div>
+
+    <!-- Email Feedback Section -->
+   <div id="feedback-section" class="section container">
+    <h4>Subscribe to Join Our Email List!</h4>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect #005b96 blue darken-4 white-text">Subscribe</button>
+
+    </form>
+    <div id="email-response"></div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Nantucket Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elems = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(elems);
+            const carouselElems = document.querySelectorAll('.carousel');
+            M.Carousel.init(carouselElems);
+        });
+        
+    </script>
+     <script>
+        // Initialize modal
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+ 
+ 
+        // Function to display selected pastry
+        function displayPastry() {
+            const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+            document.getElementById('pastry-response').innerText = `The method you selected: ${selectedPastry}`;
+        }
+        // Function to handle email subscription form submission
+        function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            document.getElementById('email').value = ''; // Clear the input
+ 
+ 
+            // Display modal
+            const modalText = document.getElementById('modal-content-text');
+            modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            const modal = M.Modal.getInstance(document.getElementById('modal1'));
+            modal.open();
+        }
+    </script>
+  
+</body>
+</html>
