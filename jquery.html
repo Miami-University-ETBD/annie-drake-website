@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nantucket Tourist Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#005b96");
+    });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $("#hide").click(function(){
+            $("ul1").hide();
+        });
+        $("#show").click(function(){
+            $("ul1").show();
+        });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+            $("#tourism-info ul li").fadeIn(2000);  // Fades in each list item one by one
+        });
+        });
+    </script>
+    <style>
+        #tourism-info ul li {
+          display: none;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+      </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Tourist Information</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="summer.html">Summer</a></li>
+                <li><a href="winter.html">Winter</a></li>
+                <li><a href="materialize.html">History</a></li>
+                <li><a href="jquery.html">Tourist Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #ffffff; border: 1px solid #005b96; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); color: #333;">
+        <h2>Best Tourist Activities</h2>
+        <button id="hide">Hide Information</button>
+        <button id="show">Show Information</button>
+        <ul1>
+            <li><strong>Beach Days</strong> - Nantucket has beautiful beaches for sunbathing, swimming, and beachcombing, including Surfside and Madaket.</li>
+            <li><strong>Bike Trails</strong> - The island accommodates for miles of bike trails, allowing visitors to explore at their own pace.</li>
+            <li><strong>Shopping & Dining</strong> - Nantucket's town has unique boutiques, art galleries, and gourmet dining options.</li>
+        </ul1>
+    </section>
+
+    <section style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #005b96; border: 1px solid  #d3d3d3; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); color: #ffffff;">
+        <h5>When to Visit</h5>
+    <p>
+        While summer is the most popular season, each time of year offers its own charm:
+    </p>
+    <button>Click for information on each season!</button><br><br>
+    <div id="tourism-info">
+        <ul>
+            <li><strong>Summer (June to August)</strong> - Peak tourist season with the warmest weather, ideal for beachgoers and outdoor activities. Book accommodations early, as the island can get busy.</li>
+            <li><strong>Fall (September to October)</strong> - Quieter than summer, with mild temperatures and beautiful views. A great time to explore without the crowds.</li>
+            <li><strong>Spring (April to May)</strong> - Spring brings blooming flowers and pleasant weather, with fewer tourists.</li>
+            <li><strong>Winter (December to March)</strong> - The island has a peaceful, festive feel, with events like the <strong>Nantucket Christmas Stroll</strong> in early December. Some businesses may close during winter, so plan accordingly.</li>
+        </ul>
+      </div>
+     </section>
+
+    <section style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #d3d3d3; border: 1px solid  #ffffff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); color: #333;">
+        <h2>Sign Up To Hear About Travel Discounts!</h2>
+    
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="text" name="email"><br>
+    </section>
+</body>
