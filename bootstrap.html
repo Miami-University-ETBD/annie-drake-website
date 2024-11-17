@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nantucket Wildlife Information</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Nantucket Wildlife</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="summer.html">Summer</a></li>
+                <li><a href="winter.html">Winter</a></li>
+                <li><a href="materialize.html">History</a></li>
+                <li><a href="jquery.html">Tourist Information</a></li>
+                <li><a href="bootstrap.html">Wildlife</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+<div class="container mt-5 wildlife-section">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Birds of Nantucket</h3>
+        <p>Nantucket is home to a diverse array of bird species, including ospreys, piping plovers, and snowy owls.</p>
+        <p>The island's salt marshes and coastal habitats provide critical nesting and feeding grounds for migratory birds.</p>
+        <div class="dropdown bird-dropdown">
+            <button type="button" class="btn btn-bird-dropdown dropdown-toggle" data-bs-toggle="dropdown">
+                Explore Birds of Nantucket
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://yesterdaysisland.com/seagull-kleptomaniacs-of-nantucket-island/">Seagulls</a></li>
+                <li><a class="dropdown-item" href="https://www.ack.net/lifestyle/piping-plovers-return-to-dionis-beach/article_dc4ca509-2638-5745-85d6-e08b77235d8b.html">Piping Plovers</a></li>
+                <li><a class="dropdown-item" href="https://nantucketcurrent.com/news/current-nature-return-of-the-osprey">Ospreys</a></li> 
+            </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h3>Marine Life</h3>
+        <p>The surrounding waters of Nantucket are rich with marine life, including seals, dolphins, and whales.</p>
+        <p>Visitors can often spot harbor seals resting on beaches or humpback whales breaching offshore during seasonal migrations.</p>
+        <button type="button" class="btn heads-up-btn" data-bs-toggle="popover" title="Nantucket's Sharks" data-bs-content="Sometimes seals can be an indicator of some larger preditors nearby! There have been many shark sightings on Nantucket shores including Great Whites! So, if you see a lot of seals in the ocean, make sure to proceed with caution!">
+            A Heads Up!
+        </button>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+            </script>
+      </div>
+      <div class="col-sm-4">
+        <h3>Land Mammals and Reptiles</h3>        
+        <p>Nantucket hosts a variety of land animals such as eastern cottontail rabbits and white-tailed deer.</p>
+        <p>Reptiles like painted turtles and garter snakes can also be found in the island's wetlands and grasslands.</p>
+
+        <div class="container mt-3">
+            <h3>Tours!</h3>
+            <p> If you're interested in registering for a wildlife tour, please highlight the boxes below for the tours you'd like to sign up for!</p>
+            
+            <form action="/action_page.php">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input custom-checkbox" id="check2" name="option2" value="something">
+                    <label class="form-check-label" for="check2">Marine Life Harbor Tour</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input custom-checkbox" id="check3" name="option3" value="something">
+                    <label class="form-check-label" for="check3">Land Animal and Reptile Tour</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input custom-checkbox" id="check4" name="option4" value="something">
+                    <label class="form-check-label" for="check4">Guided Bird Watching</label>
+                </div>
+                <button type="submit" class="btn btn-submit mt-3">Submit</button>
+            </form>            
+          </div>
+      </div>
+
+    </div>
+</div>
+  
+
+</body>
+</html>
